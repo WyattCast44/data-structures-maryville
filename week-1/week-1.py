@@ -22,7 +22,7 @@ A common punishment for school children is to write out a sentence multiple time
 """
 
 
-def print_x_times(numberOfTimes, value, options={}):
+def print_x_times(numberOfTimes, *values, options={}):
 
     import sys
 
@@ -30,17 +30,23 @@ def print_x_times(numberOfTimes, value, options={}):
         'sep': ' ',
         'end': '\n',
         'file': sys.stdout,
-        'flush': False
+        'flush': False,
+        'before': None,
+        'after': None,
     }
 
     defaults.update(options)
 
+    if defaults['before']:
+        print(defaults['before'])
+
     for index in range(numberOfTimes):
 
-        print(value, sep=defaults['sep'],
+        print(*values, sep=defaults['sep'],
               end=defaults['end'], file=defaults['file'], flush=defaults['flush'])
 
+    if defaults['after']:
+        print(defaults['after'])
 
-print_x_times(2, "I will never spam my friends again")
 
-help(print)
+print_x_times(2, "I will never spam my friends again.")
