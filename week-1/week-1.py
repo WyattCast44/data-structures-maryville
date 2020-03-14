@@ -42,3 +42,5 @@ def print_x_times(numberOfTimes, value, options={}):
 
 
 print_x_times(2, "I will never spam my friends again")
+
+help(print)
