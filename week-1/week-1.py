@@ -1,6 +1,6 @@
 """
 SWDV 610 - Data Structures
-Week 1 - Reinforcement and Punishment
+Week 1 Review
 Wyatt Castaneda
 """
 
