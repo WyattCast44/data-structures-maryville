@@ -1,5 +1,6 @@
 """
-SWDV 610 - Week 1
+SWDV 610 - Data Structures
+Week 1 - Reinforcement and Punishment
 Wyatt Castaneda
 """
 
@@ -18,7 +19,7 @@ def is_multiple(baseNumber, numberToCheck):
 
 """
 Problem 2.
-A common punishment for school children is to write out a sentence multiple times.  Write a Python stand-alone program that will write the following sentence one hundred times: "I will never spam my friends again.
+A common punishment for school children is to write out a sentence multiple times.  Write a Python stand-alone program that will write the following sentence one hundred times: "I will never spam my friends again."
 """
 
 
@@ -49,4 +50,4 @@ def print_x_times(numberOfTimes, *values, options={}):
         print(defaults['after'])
 
 
-print_x_times(2, "I will never spam my friends again.")
+print_x_times(100, "I will never spam my friends again.")
