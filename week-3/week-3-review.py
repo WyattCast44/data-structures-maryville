@@ -129,5 +129,5 @@ def reverse_list_recursive(sequence: list):
     # Then call reverse_list again but take
     # the last item of the original list
     # So the recursive function will return the
-    # last item of the shortended list
+    # last item of the shortended list  
     return [sequence[-1]] + reverse_list_recursive(sequence[:-1])
