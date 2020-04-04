@@ -1,8 +1,8 @@
-from src import Stack
+from src import Queue
 
-s = Stack()
+queue = Queue()
 
-s.push('w').push('e')
+# queue.enqueue(1)
+# queue.enqueue(2)
 
-print('Size:', s.size(), "- Empty:", s.isEmpty(),
-      "- First Value:", s.peek(), "- First Value popped:", s.pop().data, s.peek())
+print(queue.isEmpty())
