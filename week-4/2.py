@@ -1,17 +1,15 @@
-# from src import Dequeue, DoubleLinkedList
+from src import Dequeue, DoubleLinkedList
 
-from collections import deque
 
-# l = DoubleLinkedList()
+l = DoubleLinkedList()
 
-# l.append(1)
-# # l.prepend(0)
+l.prepend(0)
+l.prepend(0.5)
+l.prepend(0.25)
+l.append(0.75)
+l.append(1)
 
-# print(l.length(), l.())
+l.remove_start()
+l.remove_end()
 
-queue = deque()
-
-queue.append(1)
-queue.appendleft(0)
-
-print(queue.__len__())
+print(l.display(), l.length(), l.is_empty(), l.get_start(), l.get_end())

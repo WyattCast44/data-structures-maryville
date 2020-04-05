@@ -1,40 +1,53 @@
+from src import DoubleLinkedList
+
+
 class Dequeue:
 
     def __init__(self):
 
-        return
-
-    def insertFront(self):
+        self.inner_queue = DoubleLinkedList()
 
         return
 
-    def insertRear(self):
+    def insertFront(self, data):
 
-        return
+        self.inner_queue.prepend(data)
+
+        return self
+
+    def insertRear(self, data):
+
+        self.inner_queue.append(data)
+
+        return self
 
     def removeFront(self):
 
-        return
+        self.inner_queue.remove_start()
+
+        return self
 
     def removeRear(self):
+
+        self.inner_queue.remove_end()
 
         return
 
     def getFront(self):
 
-        return
+        return self.inner_queue.get_start()
 
     def getRear(self):
 
-        return
+        return self.inner_queue.get_end()
 
     def isEmpty(self):
 
-        return
+        return self.inner_queue.length == 0
 
     def size(self):
 
-        return
+        return self.inner_queue.length()
 
     def purge(self):
 
