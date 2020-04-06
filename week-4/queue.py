@@ -1,13 +1,10 @@
 # SWDV 610 - Data Structures
 # Wyatt Castaneda
-# Week 4 Review
+# Week 4 Review - Problem 2
 
-from src import Stack, Queue
-
+from src import Queue
 
 # 2. Implement a queue using linked lists
-
-# Queue => FIFO
 
 queue = Queue()
 
@@ -30,5 +27,3 @@ print(queue.dequeue())  # 2
 print(queue.size())  # 2
 
 quit()
-
-# 3. Implement a deque using linked lists
