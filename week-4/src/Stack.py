@@ -31,9 +31,7 @@ class Stack:
 
     def isEmpty(self):
 
-        value = (self.inner_stack.length()) == 0
-
-        return value
+        return self.inner_stack.length() == 0
 
     def size(self):
 

@@ -1,6 +1,6 @@
 # SWDV 610 - Data Structures
 # Wyatt Castaneda
-# Week 4 Review, Problem 1
+# Week 4 Review
 
 from src import Stack
 
@@ -25,8 +25,10 @@ print(stack.size())  # 4
 # point it should not be
 print(stack.isEmpty())  # False
 
+
 # Lets pop off the last item off
 print(stack.pop())  # World
+
 
 # Now lets ensure that the new last
 # item was the second to last item

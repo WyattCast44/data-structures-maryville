@@ -23,6 +23,7 @@ print(queue.dequeue())  # 1
 # Now lets get the new first item on the queue
 print(queue.dequeue())  # 2
 
+
 # Now lets ensure the size is two
 print(queue.size())  # 2
 
