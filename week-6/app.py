@@ -163,7 +163,8 @@ class BinaryHeap:
 # list as a parameter to the buildHeap method. Show both the tree and list form.
 
 
-items = random.sample(range(0, 100), 5)
+# items = random.sample(range(0, 100), 5)
+items = [9, 5, 6, 2, 3]
 
 print('\n----------------', 'Random items', '----------------\n')
 
