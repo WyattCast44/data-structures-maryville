@@ -1,3 +1,8 @@
+# SWDV 610
+# Data Structures
+# Final Project - Knights Tour
+# Wyatt Castaneda
+
 from collections import defaultdict
 
 # Given the constraints of the knight
