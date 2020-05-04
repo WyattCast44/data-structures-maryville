@@ -32,21 +32,6 @@ def getBoardSize():
     return int(input('> '))
 
 
-def getStartCoord():
-    """
-    Gets the desired starting point for the knight
-    """
-
-    return 0, 0
-
-    print('\nWhere should be start on the board?')
-
-    col = int(input('\nEnter a column number: '))
-    row = int(input('\nEnter a row number: '))
-
-    return (col, row)
-
-
 def generateGrid(boardSize):
     """
     Generates a list of all possible coordinates for a given board size.
@@ -178,7 +163,7 @@ def generateSolution(boardSize, grid, graph, startPt):
 boardSize = getBoardSize()
 
 # And giving a starting location
-startColumn, startRow = getStartCoord()
+startColumn, startRow = 0, 0
 
 # We can generate a grid of all
 # coords on the board
@@ -199,6 +184,12 @@ graph = generateGraph(tree)
 # the knights tour
 path = generateSolution(boardSize, grid, graph, (startColumn, startRow))
 
+if (boardSize != 5):
+
+    print(
+        f"\nOne possible path to complete the knights tour on a {boardSize} x {boardSize} board is the following path:")
+    print('\n', path)
+    quit()
 
 fiveGridDisplay = """
 
@@ -254,12 +245,14 @@ def animateBoard(move):
     return fiveGridDisplay
 
 
+print('\n')
+
 moveNumber = 0
 
 for move in path:
 
     print(f"Move Number: {moveNumber}")
 
-    print(animateBoard(move, moveNumber))
+    print(animateBoard(move))
 
     moveNumber = moveNumber + 1
