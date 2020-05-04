@@ -14,6 +14,8 @@ In addition to coding this task, you must post a video running and explaining yo
 This allows for you to demonstrate what is occurring in the code as it is happening and how it 
 is organized.  You must also run your code in the video to explain the output and why the 
 program produced that output.
+
+@link https://www.cs.dartmouth.edu/~devin/cs76/01_cannibals/cannibals.html
 """
 
 bank1 = {'cannibals': 3, 'missionaries': 3}
@@ -21,7 +23,7 @@ bank2 = {'cannibals': 0, 'missionaries': 0}
 boat = {'cannibals': 0, 'missionaries': 0}
 
 
-def show_current_scene(bank1=bank1, bank2=bank2, boat=boat, step=0):
+def show_current_scene(bank1=bank1, bank2=bank2, boat=boat, step=1):
 
     scene = """
     Step {}
