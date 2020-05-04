@@ -254,6 +254,12 @@ def animateBoard(move):
     return fiveGridDisplay
 
 
+moveNumber = 0
+
 for move in path:
 
-    print(animateBoard(move))
+    print(f"Move Number: {moveNumber}")
+
+    print(animateBoard(move, moveNumber))
+
+    moveNumber = moveNumber + 1
