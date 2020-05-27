@@ -1,6 +1,6 @@
 # SWDV 610 - Data Structures
 
-This repository is my code for my Data Structures class (SWDV 610), at Maryville University.
+This repository is my code for my Data Structures class (SWDV 610).
 
 ## Disclaimer
 
